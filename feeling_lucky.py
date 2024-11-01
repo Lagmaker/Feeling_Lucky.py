@@ -17,10 +17,10 @@ def decline_cookies(driver):
                 for keyword in ["decline", "reject", "no", "dismiss", "close", "got it"]
             ):
                 button.click()
-                print(f"Clicked on cookie consent button: '{text}'")
+                print(f"LOG: Clicked on cookie consent button: '{text}'")
                 return
     except:
-        print("No cookie consent banner found.")
+        print("ERROR: No cookie consent banner found.")
 
 
 search_query = input("Feeling Lucky about: ")
